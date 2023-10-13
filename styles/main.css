@@ -98,7 +98,81 @@ section {
 section.hero {
     background-color: #FFF;
     padding-top: 90px;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
 }
+
+section.hero .hero-title {
+    padding-top: 100px;
+    font-size: 60px;
+    font-weight: 500;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+section.hero .hero-title .main {
+    color: #333;
+}
+
+section.hero .hero-title .subtitle {
+    color: #C28C00;
+}
+
+section.hero .carousel {
+    display: none;
+}
+
+section.hero .carousel-dots {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 20px auto;
+}
+
+section.hero .carousel-dots .dot{
+    background: #aaa;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    margin: 6px;
+    outline: none;
+    border-style: none;
+}
+
+section.hero .carousel-slides {
+    width: 100%;
+}
+
+section.hero .carousel-slides .carousel-slide {
+    width: 100%;
+}
+
+section.hero .carousel-slides .carousel-slide .columns{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section.hero .carousel-slides .carousel-slide .column{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.carousel-slide img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    /* aspect-ratio: 9/16; */
+}
+
 
 section.search-ideas {
     background-color: #FFFE92;
