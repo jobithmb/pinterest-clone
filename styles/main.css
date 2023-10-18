@@ -6,6 +6,17 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    max-width: 100%;
+}
+
+
 nav.navbar {
     height: 80px;
 
@@ -170,7 +181,8 @@ section.hero .carousel-slides .carousel-slide .column{
     border-radius: 10px;
     width: 100%;
     height: auto;
-    /* aspect-ratio: 9/16; */
+    aspect-ratio: 9/16;
+    object-fit: cover;
 }
 
 
